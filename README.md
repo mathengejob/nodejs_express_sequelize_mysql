@@ -21,3 +21,19 @@
 Finally, we’re gonna test the Rest Apis using Postman.
 
 _Change db name to your preffered DB._
+> Create a separate file python file to run api below for post and get 
+```python
+import requests
+headers = {}
+url = "http://localhost:8080/api/payloads"
+
+payload_ = {"Header":"ruyryur",
+"HL7":"yghklj"
+}
+
+#response = requests.post(url=url, data=payload)
+response_post = requests.post(url=url, json=payload_)
+response_request = requests.request("GET", url, headers=headers)
+print("post:", response_post.text)
+#print("request:",response_request.text)
+```
