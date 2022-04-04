@@ -28,7 +28,7 @@ headers = {}
 url = "http://localhost:8080/api/payloads"
 
 payload_ = {"Header":"ruyryur",
-"HL7":"yghklj"
+"HL7_Raw":"yghklj"
 }
 
 #response = requests.post(url=url, data=payload)
